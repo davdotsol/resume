@@ -2,36 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="Portfolio of David Vauquelin, Full Stack Java and Blockchain developer specializing in Microservices, Kafka, Cloud, and Ethereum-based applications."
+    />
 
-    <title>My Resume</title>
+    <title>David Vauquelin – Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
+    <!-- FontAwesome CDN -->
     <link
-      href="vendor/fontawesome-free-5.15.4-web/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    <!-- Custom styles for this template -->
+    <!-- Custom CSS -->
     <link href="css/resume.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <header class="header">
       <div class="header-links flex-start">
         <div class="profile-container">
-          <img class="profile" src="./img/profile.jpg" alt="Joe Blow" />
+          <img
+            class="profile"
+            src="./img/profile.jpg"
+            alt="Davdotsol profile photo"
+          />
           <img class="ring" src="./img/Ring.svg" alt="Ring Border" />
         </div>
 
@@ -61,11 +69,11 @@
         </h1>
         <h2></h2>
         <p>
-          I'm a seasoned Full Stack Engineer with extensive experience in
-          developing innovative software solutions. From crafting scalable
-          applications to exploring the latest in blockchain technology, I
-          thrive on delivering high-quality solutions tailored to meet your
-          needs. Explore my social media channels below and let's connect!
+          I'm an experienced Full Stack Engineer specializing in Java,
+          Microservices, Kafka, and Cloud infrastructures, with a keen interest
+          in blockchain technologies. I build scalable, robust software
+          solutions and enjoy exploring decentralized applications. Let's
+          connect—check out my projects or reach out via my social channels!
         </p>
       </div>
 
@@ -80,6 +88,107 @@
       </ul>
     </header>
     <main>
+      <!-- EXPERIENCE SECTION -->
+      <section class="section experience">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-cards">
+          <div class="experience-card">
+            <h3>Uniflow – Senior Backend Engineer</h3>
+            <p>
+              Built scalable Node.js backend for treasury management application
+              tailored to SMEs and entrepreneurs.
+            </p>
+            <span class="experience-skills"
+              >Node.js · Express · Financial Apps</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>Planisware – Senior Full Stack Java Developer</h3>
+            <p>
+              Developed enterprise Java/VueJS applications for Project Portfolio
+              Management, optimizing PostgreSQL performance.
+            </p>
+            <span class="experience-skills"
+              >Java Enterprise · VueJS · PostgreSQL</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>HP | Thales Services – Software Engineer</h3>
+            <p>
+              Designed Kubernetes clusters, Kafka-based streaming, and Scala
+              microservices for telecom analytics.
+            </p>
+            <span class="experience-skills"
+              >Kubernetes · Kafka · Scala · Prometheus</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>Amadeus | Thales Services – Software Engineer</h3>
+            <p>
+              Developed Scala microservices and Kafka event-driven architectures
+              for airline data processing.
+            </p>
+            <span class="experience-skills"
+              >Scala · Kafka · MongoDB · Microservices</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>Orange | Thales Services – Software Engineer</h3>
+            <p>
+              Created ETL solutions and Scala admin interfaces for large-scale
+              Cassandra data processing.
+            </p>
+            <span class="experience-skills"
+              >Scala Play · Cassandra · Python · Jenkins</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>MGI | Thales Services – Software Engineer</h3>
+            <p>
+              Built AngularJS frontends integrated with Spring Boot
+              microservices for maritime logistics.
+            </p>
+            <span class="experience-skills"
+              >AngularJS · TypeScript · Spring Boot</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>EDF Lab | Thales Services – Software Engineer</h3>
+            <p>
+              Implemented JavaEE applications, automated data collection, and
+              visualizations for energy analytics.
+            </p>
+            <span class="experience-skills"
+              >JavaEE · Spring Batch · Python · D3.js</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>Thales Underwater Systems – Software Engineer</h3>
+            <p>
+              Developed Java Swing/JavaFX GUI applications for submarine sonar
+              systems.
+            </p>
+            <span class="experience-skills"
+              >Java Swing · JavaFX · Socket Programming</span
+            >
+          </div>
+
+          <div class="experience-card">
+            <h3>OpenMedia – Developer & Support</h3>
+            <p>Created PHP/MySQL web solutions for real estate clients.</p>
+            <span class="experience-skills">PHP · MySQL · Client Support</span>
+          </div>
+        </div>
+      </section>
+
       <!-- PROJECTS -->
 
       <section class="section projects">
@@ -102,7 +211,10 @@
 
         <div class="cards flex-center">
           <div class="card">
-            <img src="./img/projects/artcoin-exchange.png" alt="" />
+            <img
+              src="./img/projects/artcoin-exchange.png"
+              alt="ArtCoin Exchange screenshot"
+            />
             <h3 class="card-title">Artcoin Exchange</h3>
             <p class="card-description">
               ArtCoin Exchange: Your gateway to decentralized NFT trading.
@@ -125,7 +237,10 @@
           </div>
 
           <div class="card">
-            <img src="./img/projects/real-world-amm.png" alt="" />
+            <img
+              src="./img/projects/real-world-amm.png"
+              alt="RealWorld AMM screenshot"
+            />
             <h3 class="card-title">Automated Market Maker</h3>
             <p class="card-description">
               Real World AMM: Solidity smart contract, ReactJS frontend.
@@ -148,7 +263,7 @@
           </div>
 
           <div class="card">
-            <img src="./img/projects/nft-drop.png" alt="" />
+            <img src="./img/projects/nft-drop.png" alt="NFT Drop screenshot" />
             <h3 class="card-title">Mint NFT</h3>
             <p class="card-description">
               NFT Drop DApp: Mint NFTs on Ethereum blockchain.
@@ -171,7 +286,10 @@
           </div>
 
           <div class="card">
-            <img src="./img/projects/ethereum-gas-tracker.png" alt="" />
+            <img
+              src="./img/projects/ethereum-gas-tracker.png"
+              alt="Ethereum Gas Tracker screenshot"
+            />
             <h3 class="card-title">Ethereum Gas Tracker</h3>
             <p class="card-description">
               Ethereum Gas Tracker: Real-time analytics for transaction costs.
@@ -194,7 +312,10 @@
           </div>
 
           <div class="card">
-            <img src="./img/projects/ethereum-gas-tracker.png" alt="" />
+            <img
+              src="./img/projects/ethereum-gas-tracker.png"
+              alt="Ethereum Gas Tracker screenshot"
+            />
             <h3 class="card-title">Ethereum Gas Tracker</h3>
             <p class="card-description">
               Ethereum Gas Tracker: Real-time analytics for transaction costs.
@@ -256,7 +377,10 @@
 
         <div class="skill-cards flex-center">
           <div class="skill-card flex-center">
-            <i class="fab fa-js-square"></i>
+            <i class="fab fa-java"></i>
+          </div>
+          <div class="skill-card flex-center">
+            <i class="fas fa-cloud skill-icon"></i>
           </div>
           <div class="skill-card flex-center">
             <i class="fab fa-ethereum"></i>
@@ -267,26 +391,24 @@
           <div class="skill-card flex-center">
             <i class="fab fa-node-js"></i>
           </div>
-          <div class="skill-card flex-center">
-            <i class="fab fa-npm"></i>
-          </div>
         </div>
 
         <ul class="skill-list flex-between">
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Mobile-First,
-            Responsive design
+            <img src="./img/Check.svg" alt="Checkmark" />Java & Microservices
+            Development
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Cross browser testing &
-            Debugging
+            <img src="./img/Check.svg" alt="Checkmark" />Kafka & Event-Driven
+            Architectures
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Cross functional teams
+            <img src="./img/Check.svg" alt="Checkmark" />Cloud Infrastructure &
+            Kubernetes
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Agile development &
-            Scrum
+            <img src="./img/Check.svg" alt="Checkmark" />Blockchain & Smart
+            Contract Development
           </li>
         </ul>
       </section>
@@ -296,7 +418,7 @@
       <section class="section contact">
         <div class="contact-links flex-start">
           <div class="profile-container">
-            <img class="profile" src="./img/profile.jpg" alt="Joe Blow" />
+            <img class="profile" src="./img/profile.jpg" alt="Davdotsol" />
             <img class="ring" src="./img/Ring.svg" alt="Ring Border" />
           </div>
 

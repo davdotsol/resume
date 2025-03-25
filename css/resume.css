@@ -19,6 +19,10 @@
   --font-96: clamp(56px, 8vw, 96px);
   --font-40: clamp(24px, 6vw, 40px);
   --font-32: clamp(24px, 4vw, 32px);
+
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
 }
 
 html {
@@ -194,10 +198,9 @@ p {
   align-items: flex-start;
 }
 
-.header .header-links,
-.contact .contact-links,
-.header h1 {
-  color: var(--black);
+.header h1,
+.header-links a {
+  color: var(--white);
 }
 
 .header .flex-list {
@@ -223,38 +226,37 @@ p {
 }
 
 /* === PROJECTS === */
-
-.projects .projects-link {
-  color: var(--white);
-  margin-bottom: 30px;
-
-  opacity: 0.7;
-  transition: 250ms ease all;
-}
-
-.projects .projects-link:hover {
-  opacity: 1;
-}
-
 .projects .cards {
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .projects .card {
-  border: 1px solid var(--gray);
+  background-color: var(--gray);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  max-width: 350px;
+  height: auto;
+  border: none;
 
-  height: 510px;
-  max-width: 390px;
-  padding: 30px;
-  margin: 20px auto;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.projects .card:hover {
+  transform: translate3d(0, -10px, 0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .projects .card img {
   width: 100%;
-  max-width: 325px;
   height: auto;
-  margin: 0 auto 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 .projects .card .card-title {
@@ -265,7 +267,7 @@ p {
 }
 
 .projects .card .card-description {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .projects .card .card-buttons {
@@ -276,24 +278,22 @@ p {
 .projects .card .card-buttons .card-button--site,
 .projects .card .card-buttons .card-button--code {
   width: 150px;
-  height: 60px;
-
+  height: 50px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  opacity: 1;
   color: var(--white);
-
-  transition: 250ms ease all;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  font-size: 16px;
 }
 
 .projects .card .card-buttons .card-button--site {
-  background-color: var(--gray);
+  background-color: var(--black);
 }
 
 .projects .card .card-buttons .card-button--code {
-  border: 1px solid var(--gray);
+  border: 1px solid var(--black);
 }
 
 .projects .card .card-buttons .card-button--site:hover,
@@ -304,25 +304,37 @@ p {
 
 /* === EXPERIENCE === */
 
-.experience-description {
-  max-width: 900px;
-  margin-bottom: 125px;
-
-  font-weight: 400;
-  font-size: var(--font-32);
-  line-height: 150%;
-
-  opacity: 1;
-  position: relative;
+/* EXPERIENCE SECTION */
+.experience {
+  padding: 110px;
+  background-color: var(--gray);
 }
 
-.experience-description img {
-  position: absolute;
-  top: 50%;
-  right: -200px;
-  transform: translate(-50%, -50%);
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-  pointer-events: none;
+.experience-card {
+  background-color: var(--black);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience-skills {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--blue);
 }
 
 /* === SKILLS === */
@@ -369,6 +381,16 @@ p {
   opacity: 1;
 }
 
+.skills .skill-card .fas {
+  font-size: 80px;
+  opacity: 0.7;
+  transition: 500ms ease all;
+}
+
+.skills .skill-card:hover .fas {
+  opacity: 1;
+}
+
 .skills .skill-list {
   list-style: none;
   flex-wrap: wrap;
@@ -381,7 +403,7 @@ p {
 }
 
 .skills .skill-list li img {
-  margin: 10px;
+  margin: 5px;
 }
 
 /* === CONTACT === */
