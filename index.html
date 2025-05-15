@@ -1,489 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio of David Vauquelin, Full Stack Java and Blockchain developer specializing in Microservices, Kafka, Cloud, and Ethereum-based applications."
+      content="Portfolio of David Vauquelin, Full Stack Java and...n Microservices, Kafka, Cloud, and Ethereum-based applications."
     />
-
     <title>David Vauquelin – Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- FontAwesome CDN -->
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    <!-- Custom CSS -->
+    <!-- Main CSS -->
     <link href="css/resume.css" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
+    <!-- Header + Social + Contact -->
     <header class="header">
-      <div class="header-links flex-start">
+      <div class="container header-inner">
         <div class="profile-container">
           <img
-            class="profile"
             src="./img/profile.jpg"
             alt="Davdotsol profile photo"
+            class="profile"
           />
-          <img class="ring" src="./img/Ring.svg" alt="Ring Border" />
         </div>
+        <nav class="social-links">
+          <a
+            href="https://www.linkedin.com/in/davdotsol/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.github.com/davdotsol/"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@DavidBlockchainDev"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/davdotsol/"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </nav>
+      </div>
+    </header>
 
-        <ul class="flex-list list-items-circle">
+    <!-- Dark/Light Mode Toggle -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <main class="container">
+      <section class="intro reveal">
+        <h1 class="intro-title">Full Stack Engineer</h1>
+        <h2 class="intro-subtitle">Java &amp; Cloud Microservices</h2>
+        <p>
+          Seasoned engineer with 18 years building high-performance enterprise
+          apps in Java/Spring Boot and Kafka-driven microservices. Expert in
+          modern front-end frameworks (Vue.js, React) and Node.js/Express
+          backends. I streamline CI/CD, champion clean architecture, and lead
+          teams to ship resilient, scalable software.
+        </p>
+        <ul class="contact-details">
+          <li>(33) 07-81-72-21-33</li>
           <li>
-            <a href="https://www.linkedin.com/in/davdotsol/" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.github.com/davdotsol/" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@DavidBlockchainDev"
-              target="_blank"
+            <a href="mailto:david.chainreactdev@gmail.com"
+              >david.chainreactdev@gmail.com</a
             >
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/davdotsol/" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
           </li>
         </ul>
-      </div>
-
-      <div class="intro">
-        <h1>
-          Hi, I’m David<br />
-          Blockchain Developer
-        </h1>
-        <h2></h2>
-        <p>
-          I'm an experienced Full Stack Engineer specializing in Java,
-          Microservices, Kafka, and Cloud infrastructures, with a keen interest
-          in blockchain technologies. I build scalable, robust software
-          solutions and enjoy exploring decentralized applications. Let's
-          connect—check out my projects or reach out via my social channels!
-        </p>
-      </div>
-
-      <ul class="contact-details flex-list">
-        <li>(33) 07-81-72-21-33</li>
-        <hr />
-        <li>
-          <a href="mailto: david.chainreactdev@gmail.com"
-            >david.chainreactdev@gmail.com</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main>
-      <!-- EXPERIENCE SECTION -->
-      <section class="section experience">
+      </section>
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section id="experience" class="section reveal">
         <h2>Professional Experience</h2>
-
-        <div class="experience-cards">
-          <div class="experience-card">
+        <div class="cards">
+          <!-- Uniflow » Senior Backend Engineer -->
+          <article class="card">
             <h3>Uniflow – Senior Backend Engineer</h3>
             <p>
               Built scalable Node.js backend for treasury management application
               tailored to SMEs and entrepreneurs.
             </p>
-            <span class="experience-skills"
-              >Node.js · Express · Financial Apps</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">Node.js · Express · Financial Apps</p>
+          </article>
+          <!-- Planisware » Senior Full Stack Java Developer -->
+          <article class="card">
             <h3>Planisware – Senior Full Stack Java Developer</h3>
             <p>
               Developed enterprise Java/VueJS applications for Project Portfolio
               Management, optimizing PostgreSQL performance.
             </p>
-            <span class="experience-skills"
-              >Java Enterprise · VueJS · PostgreSQL</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">Java Enterprise · VueJS · PostgreSQL</p>
+          </article>
+          <!-- HP | Thales Services » Software Engineer -->
+          <article class="card">
             <h3>HP | Thales Services – Software Engineer</h3>
             <p>
               Designed Kubernetes clusters, Kafka-based streaming, and Scala
               microservices for telecom analytics.
             </p>
-            <span class="experience-skills"
-              >Kubernetes · Kafka · Scala · Prometheus</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">Kubernetes · Kafka · Scala · Prometheus</p>
+          </article>
+          <!-- Amadeus | Thales Services » Software Engineer -->
+          <article class="card">
             <h3>Amadeus | Thales Services – Software Engineer</h3>
             <p>
               Developed Scala microservices and Kafka event-driven architectures
               for airline data processing.
             </p>
-            <span class="experience-skills"
-              >Scala · Kafka · MongoDB · Microservices</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">Scala · Kafka · MongoDB · Microservices</p>
+          </article>
+          <!-- Orange | Thales Services » Software Engineer -->
+          <article class="card">
             <h3>Orange | Thales Services – Software Engineer</h3>
             <p>
               Created ETL solutions and Scala admin interfaces for large-scale
               Cassandra data processing.
             </p>
-            <span class="experience-skills"
-              >Scala Play · Cassandra · Python · Jenkins</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">Scala Play · Cassandra · Python · Jenkins</p>
+          </article>
+          <!-- MGI | Thales Services » Software Engineer -->
+          <article class="card">
             <h3>MGI | Thales Services – Software Engineer</h3>
             <p>
               Built AngularJS frontends integrated with Spring Boot
               microservices for maritime logistics.
             </p>
-            <span class="experience-skills"
-              >AngularJS · TypeScript · Spring Boot</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">AngularJS · TypeScript · Spring Boot</p>
+          </article>
+          <!-- EDF Lab | Thales Services » Software Engineer -->
+          <article class="card">
             <h3>EDF Lab | Thales Services – Software Engineer</h3>
             <p>
               Implemented JavaEE applications, automated data collection, and
               visualizations for energy analytics.
             </p>
-            <span class="experience-skills"
-              >JavaEE · Spring Batch · Python · D3.js</span
-            >
-          </div>
-
-          <div class="experience-card">
+            <p class="skills">JavaEE · Spring Batch · Python · D3.js</p>
+          </article>
+          <!-- Thales Underwater Systems » Software Engineer -->
+          <article class="card">
             <h3>Thales Underwater Systems – Software Engineer</h3>
             <p>
               Developed Java Swing/JavaFX GUI applications for submarine sonar
               systems.
             </p>
-            <span class="experience-skills"
-              >Java Swing · JavaFX · Socket Programming</span
-            >
-          </div>
-
-          <div class="experience-card">
-            <h3>OpenMedia – Developer & Support</h3>
+            <p class="skills">Java Swing · JavaFX · Socket Programming</p>
+          </article>
+          <!-- OpenMedia » Developer & Support -->
+          <article class="card">
+            <h3>OpenMedia – Developer &amp; Support</h3>
             <p>Created PHP/MySQL web solutions for real estate clients.</p>
-            <span class="experience-skills">PHP · MySQL · Client Support</span>
-          </div>
+            <p class="skills">PHP · MySQL · Client Support</p>
+          </article>
         </div>
       </section>
 
       <!-- PROJECTS -->
-
-      <section class="section projects">
+      <section id="projects" class="section reveal">
         <div class="flex-between">
           <h2>Take a look at my projects</h2>
-
           <a
             href="https://www.github.com/davdotsol/"
             target="_blank"
-            class="projects-link flex-between"
-          >
-            See all works
-            <img
-              src="./img/ArrowUpRight.svg"
-              alt="Arrow"
-              style="margin-left: 8px; opacity: 0.7"
-            />
+            class="projects-link"
+            >See all works
+            <img src="./img/ArrowUpRight.svg" alt="Arrow" class="icon-inline" />
           </a>
         </div>
-
-        <div class="cards flex-center">
-          <div class="card">
+        <div class="cards">
+          <!-- Artcoin Exchange -->
+          <article class="card">
             <img
               src="./img/projects/artcoin-exchange.png"
               alt="ArtCoin Exchange screenshot"
+              loading="lazy"
             />
-            <h3 class="card-title">Artcoin Exchange</h3>
-            <p class="card-description">
-              ArtCoin Exchange: Your gateway to decentralized NFT trading.
-            </p>
-
+            <h3>Artcoin Exchange</h3>
+            <p>ArtCoin Exchange: Your gateway to decentralized NFT trading.</p>
             <div class="card-buttons">
-              <a
-                href="https://artcoin-exchange.vercel.app/"
-                class="card-button--site"
-                target="_blank"
+              <a href="https://artcoin-exchange.vercel.app/" target="_blank"
                 >Site</a
               >
               <a
                 href="https://github.com/davdotsol/artcoin-exchange-nft-marketplace"
-                class="card-button--code"
                 target="_blank"
                 >Code</a
               >
             </div>
-          </div>
-
-          <div class="card">
+          </article>
+          <!-- Automated Market Maker -->
+          <article class="card">
             <img
               src="./img/projects/real-world-amm.png"
               alt="RealWorld AMM screenshot"
+              loading="lazy"
             />
-            <h3 class="card-title">Automated Market Maker</h3>
-            <p class="card-description">
-              Real World AMM: Solidity smart contract, ReactJS frontend.
-            </p>
-
+            <h3>Automated Market Maker</h3>
+            <p>Real World AMM: Solidity smart contract, ReactJS frontend.</p>
             <div class="card-buttons">
-              <a
-                href="https://real-world-amm.vercel.app/"
-                class="card-button--site"
-                target="_blank"
+              <a href="https://real-world-amm.vercel.app/" target="_blank"
                 >Site</a
               >
               <a
                 href="https://github.com/davdotsol/real-world-amm"
-                class="card-button--code"
                 target="_blank"
                 >Code</a
               >
             </div>
-          </div>
-
-          <div class="card">
-            <img src="./img/projects/nft-drop.png" alt="NFT Drop screenshot" />
-            <h3 class="card-title">Mint NFT</h3>
-            <p class="card-description">
-              NFT Drop DApp: Mint NFTs on Ethereum blockchain.
-            </p>
-
+          </article>
+          <!-- Mint NFT -->
+          <article class="card">
+            <img
+              src="./img/projects/nft-drop.png"
+              alt="NFT Drop screenshot"
+              loading="lazy"
+            />
+            <h3>Mint NFT</h3>
+            <p>NFT Drop DApp: Mint NFTs on Ethereum blockchain.</p>
             <div class="card-buttons">
-              <a
-                href="https://nft-drop-cyan.vercel.app/"
-                target="_blank"
-                class="card-button--site"
+              <a href="https://nft-drop-cyan.vercel.app/" target="_blank"
                 >Site</a
               >
-              <a
-                href="https://github.com/davdotsol/nft-drop"
-                target="_blank"
-                class="card-button--code"
+              <a href="https://github.com/davdotsol/nft-drop" target="_blank"
                 >Code</a
               >
             </div>
-          </div>
-
-          <div class="card">
+          </article>
+          <!-- Ethereum Gas Tracker -->
+          <article class="card">
             <img
               src="./img/projects/ethereum-gas-tracker.png"
               alt="Ethereum Gas Tracker screenshot"
+              loading="lazy"
             />
-            <h3 class="card-title">Ethereum Gas Tracker</h3>
-            <p class="card-description">
+            <h3>Ethereum Gas Tracker</h3>
+            <p>
               Ethereum Gas Tracker: Real-time analytics for transaction costs.
             </p>
-
             <div class="card-buttons">
               <a
                 href="https://ethereum-gas-tracker-client.vercel.app/"
                 target="_blank"
-                class="card-button--site"
                 >Site</a
               >
               <a
                 href="https://github.com/davdotsol/ethereum-gas-tracker-client"
                 target="_blank"
-                class="card-button--code"
                 >Code</a
               >
             </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="./img/projects/ethereum-gas-tracker.png"
-              alt="Ethereum Gas Tracker screenshot"
-            />
-            <h3 class="card-title">Ethereum Gas Tracker</h3>
-            <p class="card-description">
-              Ethereum Gas Tracker: Real-time analytics for transaction costs.
-            </p>
-
-            <div class="card-buttons">
-              <a
-                href="https://ethereum-gas-tracker-client.vercel.app/"
-                target="_blank"
-                class="card-button--site"
-                >Site</a
-              >
-              <a
-                href="https://github.com/davdotsol/ethereum-gas-tracker-client"
-                target="_blank"
-                class="card-button--code"
-                >Code</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
+          </article>
+          <!-- Mafia Game -->
+          <article class="card">
             <img
               src="./img/projects/mafia-game.png"
               alt="Mafia Game on the Blockchain"
+              loading="lazy"
             />
-            <h3 class="card-title">Mafia Game</h3>
-            <p class="card-description">
-              Decentralized version of the classic Mafia game.
-            </p>
-
+            <h3>Mafia Game</h3>
+            <p>Decentralized version of the classic Mafia game.</p>
             <div class="card-buttons">
               <a
                 href="https://mafia-game-blockchain.vercel.app/"
                 target="_blank"
-                class="card-button--site"
                 >Site</a
               >
               <a
                 href="https://github.com/davdotsol/scaffold-eth-mafia-game"
                 target="_blank"
-                class="card-button--code"
                 >Code</a
               >
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!-- SKILLS -->
-
-      <section class="section skills">
-        <p class="experience-description">
+      <section id="skills" class="section reveal">
+        <p class="section-intro">
           Experienced Full Stack Engineer now focused on blockchain tech.
           Specializing in scalable solutions tailored to your needs.
           <img src="./img/Dot.svg" alt="Blue Dot" />
         </p>
         <h2>Skills that I have</h2>
-
-        <div class="skill-cards flex-center">
-          <div class="skill-card flex-center">
-            <i class="fab fa-java"></i>
-          </div>
-          <div class="skill-card flex-center">
-            <i class="fas fa-cloud skill-icon"></i>
-          </div>
-          <div class="skill-card flex-center">
-            <i class="fab fa-ethereum"></i>
-          </div>
-          <div class="skill-card flex-center">
-            <i class="fab fa-react"></i>
-          </div>
-          <div class="skill-card flex-center">
-            <i class="fab fa-node-js"></i>
-          </div>
+        <div class="cards skill-grid">
+          <div class="skill-card"><i class="fab fa-java"></i></div>
+          <div class="skill-card"><i class="fas fa-cloud"></i></div>
+          <div class="skill-card"><i class="fab fa-ethereum"></i></div>
+          <div class="skill-card"><i class="fab fa-react"></i></div>
+          <div class="skill-card"><i class="fab fa-node-js"></i></div>
         </div>
-
-        <ul class="skill-list flex-between">
+        <ul class="skill-list">
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Java & Microservices
-            Development
+            <img src="./img/Check.svg" alt="Checkmark" />Java &amp;
+            Microservices Development
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Kafka & Event-Driven
-            Architectures
+            <img src="./img/Check.svg" alt="Checkmark" />Kafka &amp;
+            Event-Driven Architectures
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Cloud Infrastructure &
-            Kubernetes
+            <img src="./img/Check.svg" alt="Checkmark" />Cloud Infrastructure
+            &amp; Kubernetes
           </li>
           <li>
-            <img src="./img/Check.svg" alt="Checkmark" />Blockchain & Smart
+            <img src="./img/Check.svg" alt="Checkmark" />Blockchain &amp; Smart
             Contract Development
           </li>
         </ul>
       </section>
 
       <!-- CONTACT -->
-
-      <section class="section contact">
-        <div class="contact-links flex-start">
-          <div class="profile-container">
-            <img class="profile" src="./img/profile.jpg" alt="Davdotsol" />
-            <img class="ring" src="./img/Ring.svg" alt="Ring Border" />
-          </div>
-
-          <ul class="flex-list list-items-circle">
-            <li>
-              <a href="https://www.linkedin.com/in/davdotsol/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.github.com/davdotsol/" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@DavidBlockchainDev"
-                target="_blank"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/davdotsol/" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <h1>Get in touch</h1>
-
+      <section id="contact" class="section reveal">
+        <h2>Get in touch</h2>
         <p>
           I bring extensive Full Stack experience, now specializing in
           blockchain technology for scalable solutions. Let's connect!
         </p>
-
-        <ul class="contact-details flex-list">
+        <ul class="contact-details">
           <li>(33) 07-81-72-21-33</li>
-          <hr />
           <li>
-            <a href="mailto: david.chainreactdev@gmail.com" style="border: none"
+            <a href="mailto:david.chainreactdev@gmail.com"
               >david.chainreactdev@gmail.com</a
             >
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer flex-center">
-      <p><small>© David@ChainReactDev 2024. All rights reserved.</small></p>
+
+    <footer class="footer">
+      <div class="container flex-center">
+        <small>© David@ChainReactDev 2024. All rights reserved.</small>
+      </div>
     </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
+    <!-- Main JS -->
     <script src="js/resume.js"></script>
   </body>
 </html>
