@@ -239,6 +239,45 @@ body {
   color: var(--text);
 }
 
+/* Interactive Resume Chatbot */
+.chatbot-section {
+  text-align: center;
+  background: var(--accent);
+  color: var(--bg);
+  padding: calc(var(--gap) * 1.5) var(--gap);
+  border-radius: var(--radius);
+  margin-bottom: var(--gap);
+}
+.chatbot-section h2 {
+  font-size: var(--fs-2);
+  margin-bottom: 0.5rem;
+}
+.chatbot-section h2 i {
+  margin-right: 0.5rem;
+}
+.chatbot-section p {
+  font-size: var(--fs-4);
+  margin-bottom: var(--gap);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chatbot-link {
+  display: inline-block;
+  font-size: var(--fs-4);
+  color: var(--accent);
+  background: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.chatbot-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
 /* SKILLS GRID */
 .skill-grid {
   display: grid;
